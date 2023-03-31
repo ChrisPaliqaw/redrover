@@ -3183,6 +3183,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@improbable-eng/grpc-web@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "@improbable-eng/grpc-web@npm:0.13.0"
+  dependencies:
+    browser-headers: ^0.4.0
+  peerDependencies:
+    google-protobuf: ^3.2.0
+  checksum: cff117fe97039234918b5ae99b88f55735bb74ea6d0eade4903ff7250baf283c2e2c3f3e8ce534da90ebe3963de9ae2380fd5a70cedc1774d80063f840d37374
+  languageName: node
+  linkType: hard
+
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -6945,6 +6956,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@viamrobotics/rpc@npm:^0.1.34":
+  version: 0.1.34
+  resolution: "@viamrobotics/rpc@npm:0.1.34"
+  dependencies:
+    "@improbable-eng/grpc-web": ^0.13.0
+    google-protobuf: ^3.14.0
+  checksum: f3cec5bd2e06aff4ad30dbedc640ac3ce707bd90bb098d987877290b16074e097121c6a1b9e231d85f5bc6a7adbac438027534cd8e608f56e9540dddb4683bbe
+  languageName: node
+  linkType: hard
+
+"@viamrobotics/sdk@npm:^0.0.31":
+  version: 0.0.31
+  resolution: "@viamrobotics/sdk@npm:0.0.31"
+  dependencies:
+    "@viamrobotics/rpc": ^0.1.34
+  checksum: d6cc48cb3ea33a1adbda9e65097555ae6cb630a147ba9bb4c2d5e7a93d2a791ebd6cbbac1bae1dd3a00eaec9d88496d93df23340bf9bb05c0b86df90a4dd5df8
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.11.1":
   version: 1.11.1
   resolution: "@webassemblyjs/ast@npm:1.11.1"
@@ -9018,6 +9048,13 @@ __metadata:
   version: 1.2.1
   resolution: "browser-assert@npm:1.2.1"
   checksum: 902abf999f92c9c951fdb6d7352c09eea9a84706258699655f7e7906e42daa06a1ae286398a755872740e05a6a71c43c5d1a0c0431d67a8cdb66e5d859a3fc0c
+  languageName: node
+  linkType: hard
+
+"browser-headers@npm:^0.4.0":
+  version: 0.4.1
+  resolution: "browser-headers@npm:0.4.1"
+  checksum: 3b08864bb955b295ab3dd6ab775c7798096c2e85486571803b4070ec484de83ccceebe531a8b00d5daf4463fada5e7ca18cd1a71cc1ee0dfdbab705332318cef
   languageName: node
   linkType: hard
 
@@ -13654,6 +13691,13 @@ __metadata:
   peerDependencies:
     csstype: ^3.0.10
   checksum: 52c47506f852c4b88a89cf0325ffb227ba43e8ea9ff8da7948357702f2fb5df0fbcb86f1be0a57486ca61aab3089956b9c6d4da6d8893f1cd1d49f5e67f192e0
+  languageName: node
+  linkType: hard
+
+"google-protobuf@npm:^3.14.0":
+  version: 3.21.2
+  resolution: "google-protobuf@npm:3.21.2"
+  checksum: df20b41aad9eba4d842d69c717a4d73ac6d321084c12f524ad5eb79a47ad185323bd1b477c19565a15fd08b6eef29e475c8ac281dbc6fe547b81d8b6b99974f5
   languageName: node
   linkType: hard
 
@@ -20831,6 +20875,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 4.4.2
+    "@viamrobotics/sdk": ^0.0.31
   languageName: unknown
   linkType: soft
 
