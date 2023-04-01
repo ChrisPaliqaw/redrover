@@ -1,5 +1,45 @@
 # README
 
+This web app that connect to a Viam Rover. Follow the instruction at [Try Viam](https://docs.viam.com/try-viam/)
+to connect to a remote Rover for free.
+
+![Viam Rover](rover.png)
+
+To connect to your robot, create a **.env** file in the project's root directory that has the following values, replacing
+the square brackets and their contents. You can get this information from the TypeScript
+code sample in your robot's control panel.
+```
+ROBOT_SECRET=[secret]
+HOST=[host]
+SIGNALING_ADDRESS=[address]
+BASE_NAME=[base anem]
+ICE_SERVER=[server]
+```
+
+For detailed information on running RedwoodJS projects, see the information below, but the simplest way to get started is just to run the following commands from the project's root directory
+```
+yarn
+yarn rw dev
+```
+The app will be available at localhost:8910. It will
+attempt to connect to your Rover automatically, and
+after it does, the forward, backward, spin left and
+spin right buttons will function. The easiest way
+to use the app is to open the your robot's control
+panel in one window, and tap the arrow keys in
+redrover in another window off to the side
+
+![the Viam control panel and redrover side-by-side](windows-side-by-side.png)
+
+To build more
+functionality, the best place to start is by modifying
+src/pages/TeleopPage/TeleopPage.txt - you don't
+have to know much about RedwoodJS to do so, it's
+just TypeScript React code.
+
+
+# RedwoodJS Information
+
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
 > **Prerequisites**
