@@ -1,6 +1,7 @@
 # README
 
-This web app that connect to a Viam Rover. Follow the instruction at [Try Viam](https://docs.viam.com/try-viam/)
+Teleop a Viam Rover using the
+Viam TypeScript SDK. Follow the instruction at [Try Viam](https://docs.viam.com/try-viam/)
 to connect to a remote Rover for free.
 
 ![Viam Rover](rover.png)
